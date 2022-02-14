@@ -11,10 +11,6 @@ const uploadSchema = new Schema({
   type: {
     type: String
   },
-//   limits: {
-//     fileSize: 200000000
-//   },
-//   abortOnLimit: true,
   is_safe: {
     type: Boolean,
     default: true
