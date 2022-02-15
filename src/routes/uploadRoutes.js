@@ -48,3 +48,35 @@ uploadRouter.get('/download', (req,res,next) => {
 })
 
 export default uploadRouter;
+
+// import dotenv from 'dotenv';
+// import cloudinary from "cloudinary";
+// import { CloudinaryStorage } from "multer-storage-cloudinary";
+// import express from "express";
+// import multer from "multer";
+// import { Upload } from "../model/uploadModel.js"
+
+// dotenv.config()
+
+// const cloudinaryV2 = cloudinary.v2;
+// const uploadRouter = express.Router();
+
+// cloudinaryV2.config({
+//     cloud_name: process.env.CLOUDINARY_NAME, 
+//       api_key: process.env.CLOUDINARY_KEY, 
+//       api_secret: process.env.CLOUDINARY_SECRET,
+//       secure: true
+// });
+
+// const storage = new CloudinaryStorage({
+//   cloudinary: cloudinary,
+//   params: {
+//     folder: "DEV",
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     cb(null, "upload/");
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, Date.now() + "--" + file.originalname);
+//   },
+// });
